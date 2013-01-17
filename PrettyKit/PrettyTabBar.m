@@ -30,9 +30,9 @@
 #import "PrettyTabBar.h"
 #import "PrettyDrawing.h"
 
-#define default_gradient_start_color [UIColor colorWithHex:0x444444]
-#define default_gradient_end_color [UIColor colorWithHex:0x060606]
-#define default_separator_line_color [UIColor colorWithHex:0x666666]
+#define default_gradient_start_color [UIColor colorWithHex:0x373737]
+#define default_gradient_end_color [UIColor colorWithHex:0x1f1f20]
+#define default_separator_line_color [UIColor colorWithHex:0x2c2c2d]
 
 @implementation PrettyTabBar
 @synthesize gradientStartColor, gradientEndColor, separatorLineColor;
@@ -52,6 +52,8 @@
     self.gradientStartColor = default_gradient_start_color;
     self.gradientEndColor = default_gradient_end_color;
     self.separatorLineColor = default_separator_line_color;
+    
+    self.selectionIndicatorImage = [UIImage imageNamed:@"tabbar_selected"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
